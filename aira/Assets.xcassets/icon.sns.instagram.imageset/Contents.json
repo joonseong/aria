@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icon.sns.instagram.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
