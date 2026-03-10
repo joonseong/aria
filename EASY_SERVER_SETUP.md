@@ -13,17 +13,17 @@
 앱을 실행하고 다음 코드를 어디서든 한 번만 실행하세요:
 
 ```swift
-// 예시: 앱 시작 시 (airaApp.swift의 onAppear 등)
+// 예시: 앱 시작 시 (ariaApp.swift의 onAppear 등)
 ServerConfig.shared.enableServerMode(url: "https://your-server.com")
 ```
 
 또는 직접 코드에 추가:
 
 ```swift
-// airaApp.swift 또는 ContentView.swift의 onAppear에서
+// ariaApp.swift 또는 ContentView.swift의 onAppear에서
 .onAppear {
     // 서버 URL만 여기에 입력!
-    ServerConfig.shared.enableServerMode(url: "https://api.aira.com")
+    ServerConfig.shared.enableServerMode(url: "https://api.aria.com")
 }
 ```
 

@@ -19,13 +19,13 @@
 
 #### 1.2 플랫폼 설정
 1. 앱 설정 → 플랫폼 → iOS 플랫폼 등록
-2. **번들 ID** 입력 (예: `com.yourcompany.aira`)
+2. **번들 ID** 입력 (예: `com.yourcompany.aria`)
 3. 저장
 
 #### 1.3 카카오 로그인 활성화
 1. 제품 설정 → 카카오 로그인 → 활성화 설정: ON
 2. Redirect URI 등록:
-   - iOS: `{YOUR_BUNDLE_ID}://oauth` (예: `com.yourcompany.aira://oauth`)
+   - iOS: `{YOUR_BUNDLE_ID}://oauth` (예: `com.yourcompany.aria://oauth`)
    - 저장
 
 #### 1.4 앱 키 확인
@@ -40,7 +40,7 @@
 2. File → Add Packages...
 3. URL 입력: `https://github.com/kakao/kakao-ios-sdk`
 4. Version: `2.20.0` 이상 선택
-5. Add to Target: `aira` 선택
+5. Add to Target: `aria` 선택
 6. Add Package
 
 **방법 2: CocoaPods**
@@ -56,7 +56,7 @@ pod 'KakaoSDK', '~> 2.20.0'
 **URL Types 추가:**
 1. Target → Info 탭
 2. URL Types → + 버튼
-3. URL Schemes: `{YOUR_BUNDLE_ID}` (예: `com.yourcompany.aira`)
+3. URL Schemes: `{YOUR_BUNDLE_ID}` (예: `com.yourcompany.aria`)
 4. Identifier: `kakao`
 
 **또는 Info.plist 파일 직접 수정:**
@@ -76,14 +76,14 @@ pod 'KakaoSDK', '~> 2.20.0'
 
 #### 2.3 AppDelegate 설정
 
-`airaApp.swift` 파일 수정:
+`ariaApp.swift` 파일 수정:
 
 ```swift
 import SwiftUI
 import KakaoSDKCommon
 
 @main
-struct airaApp: App {
+struct ariaApp: App {
     init() {
         // 카카오 SDK 초기화
         KakaoSDK.initSDK(appKey: "YOUR_NATIVE_APP_KEY")
@@ -320,14 +320,14 @@ class AuthService: NSObject, AuthServiceProtocol, ASAuthorizationControllerDeleg
 }
 ```
 
-### 2. airaApp.swift 업데이트
+### 2. ariaApp.swift 업데이트
 
 ```swift
 import SwiftUI
 import KakaoSDKCommon
 
 @main
-struct airaApp: App {
+struct ariaApp: App {
     init() {
         // 카카오 SDK 초기화
         // ⚠️ 실제 앱 키로 교체 필요!
@@ -344,7 +344,7 @@ struct airaApp: App {
 
 ### 3. URL Scheme 처리 (카카오 로그인용)
 
-`airaApp.swift`에 URL 처리 추가:
+`ariaApp.swift`에 URL 처리 추가:
 
 ```swift
 import SwiftUI
@@ -352,7 +352,7 @@ import KakaoSDKCommon
 import KakaoSDKAuth
 
 @main
-struct airaApp: App {
+struct ariaApp: App {
     init() {
         KakaoSDK.initSDK(appKey: "YOUR_NATIVE_APP_KEY")
     }
