@@ -55,7 +55,7 @@
 
 ### 2단계: 코드에 추가
 ```swift
-// airaApp.swift
+// ariaApp.swift
 ServerConfig.shared.enableServerMode(url: "https://your-project.supabase.co")
 ```
 

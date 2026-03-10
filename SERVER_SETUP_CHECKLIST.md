@@ -116,9 +116,9 @@ API 호출 중 로딩 인디케이터 표시:
 
 ## 🔧 주요 파일 위치
 
-- **API 클라이언트**: `aira/APIClient.swift`
-- **서버 모델**: `aira/ServerModels.swift`
-- **연동 예시**: `aira/ServerIntegrationExample.swift`
+- **API 클라이언트**: `aria/APIClient.swift`
+- **서버 모델**: `aria/ServerModels.swift`
+- **연동 예시**: `aria/ServerIntegrationExample.swift`
 - **상세 가이드**: `SERVER_INTEGRATION_GUIDE.md`
 
 ## 📝 참고사항

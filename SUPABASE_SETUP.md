@@ -15,7 +15,7 @@
 3. GitHub로 로그인 (또는 이메일 가입)
 4. "New Project" 클릭
 5. 프로젝트 정보 입력:
-   - **Name**: aira (원하는 이름)
+   - **Name**: aria (원하는 이름)
    - **Database Password**: 강한 비밀번호 입력 (저장해두세요!)
    - **Region**: 가장 가까운 지역 선택
 6. "Create new project" 클릭
@@ -31,11 +31,11 @@
 
 ### 3단계: 코드에 추가 (1분)
 
-`airaApp.swift` 파일을 열고:
+`ariaApp.swift` 파일을 열고:
 
 ```swift
 @main
-struct airaApp: App {
+struct ariaApp: App {
     init() {
         // 카카오 SDK 초기화
         KakaoSDK.initSDK(appKey: "bdf901ff6a8afbf4913f104591775bd9")
